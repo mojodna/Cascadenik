@@ -797,7 +797,7 @@ def is_applicable_selector(selector, filter):
 def get_map_attributes(declarations):
     """
     """
-    property_map = {'map-bgcolor': 'background'}    
+    property_map = {'map-bgcolor': 'background', 'font-directory': 'font-directory'}
     
     return dict([(property_map[dec.property.name], dec.value.value)
                  for dec in declarations

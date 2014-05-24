@@ -80,6 +80,7 @@ properties = {
 
     # 
     'map-bgcolor': color_transparent,
+    'font-directory': uri,
 
     #--------------- polygon symbolizer
 

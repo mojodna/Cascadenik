@@ -315,6 +315,9 @@ class ValueTests(unittest.TestCase):
 
     def testValue15(self):
         self.assertEqual(14, postprocess_value(Property('shield-line-spacing'), [('NUMBER', '14')], False, 0, 0).value)
+
+    def testValue16(self):
+        self.assertEqual('fonts/', str(postprocess_value(Property('font-directory'), [('URI', 'url("fonts/")')], False, 0, 0)))
     
 class CascadeTests(unittest.TestCase):
 
